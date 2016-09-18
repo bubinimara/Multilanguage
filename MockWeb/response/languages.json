@@ -1,0 +1,16 @@
+{
+  "languages": [
+    {
+      "id": 123,
+      "name": "mock language 1",
+      "iso": "es_ES",
+      "isDefault": 1
+    },
+    {
+      "id": 456,
+      "name": "mock language 2",
+      "iso": "en_ES",
+      "isDefault": 0
+    }
+  ]
+}

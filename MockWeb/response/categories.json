@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "priority": 1,
+      "languages": [
+        {
+          "id": 123,
+          "name": "category 1"
+        },
+        {
+          "id": 456,
+          "name": "categoria 1"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "priority": 2,
+      "languages": [
+        {
+          "id": 123,
+          "name": "category 2"
+        },
+        {
+          "id": 456,
+          "name": "categoria 2"        
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "priority": 3,
+      "languages": [
+        {
+          "id": 123,
+          "name": "category 3"
+        },
+        {
+          "id": 456,
+          "name": "categoria 3"
+        }
+      ]
+    }
+  ]
+}
