@@ -1,0 +1,22 @@
+machine:
+  environment:
+    PWD_ANDROID_SOURCE: Android 
+
+dependencies:
+  pre:
+    - echo 'y' | android update sdk --filter build-tools-23.0.3 --no-ui --all # add script to find version
+    - echo 'y' | android update sdk --no-ui --all --filter extra-android-m2repository
+    - echo 'y' | android update sdk --no-ui --all --filter extra-android-support
+    - echo 'y' | android update sdk --no-ui --all --filter extra-google-m2repository
+        
+test:
+  pwd: 
+    PWD_ANDROID_SOURCE
+  pre:
+    - emulator -avd circleci-android22 -no-audio -no-window:
+        background: true
+        parallel: true
+    - circle-android wait-for-boot  
+  override:
+    - ./gradlew connectedAndroidTest
+    
