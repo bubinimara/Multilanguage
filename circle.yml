@@ -9,11 +9,10 @@ dependencies:
         
 test:
   pre:
-    - cd Android
     - emulator -avd circleci-android22 -no-audio -no-window:
         background: true
         parallel: true
     - circle-android wait-for-boot  
   override:
-    - ./gradlew connectedAndroidTest
+    - cd Android && ./gradlew connectedAndroidTest
     
