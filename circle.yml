@@ -1,11 +1,11 @@
 
 dependencies:
   pre:
-  # prevent to download on every build
-#    - echo 'y' | android update sdk --filter build-tools-23.0.3 --no-ui --all # add script to find version
-#    - echo 'y' | android update sdk --no-ui --all --filter extra-android-m2repository
-#    - echo 'y' | android update sdk --no-ui --all --filter extra-android-support
-#    - echo 'y' | android update sdk --no-ui --all --filter extra-google-m2repository
+    - echo 'y' | android update sdk --filter build-tools-23.0.3 --no-ui --all # add script to find version
+    - echo 'y' | android update sdk --filter android-24 --no-ui --all
+    - echo 'y' | android update sdk --no-ui --all --filter extra-android-m2repository
+    - echo 'y' | android update sdk --no-ui --all --filter extra-android-support
+    - echo 'y' | android update sdk --no-ui --all --filter extra-google-m2repository
         
 test:
   pre:
